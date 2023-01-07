@@ -20,7 +20,7 @@ app.use(cors());
 
 const mysql = require("mysql2");
 const connection = mysql.createConnection({
-  host: "localhost",
+  host: "https://demo-banana-api.azurewebsites.net",
   user: "root",
   password: "root",
   database: "mydb",
