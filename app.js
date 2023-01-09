@@ -27,10 +27,10 @@ const connection = mysql.createConnection({
   port: 3306,
 });
 
-// app.get("/", (req, res) => {
-//   // console.log(req);
-//   res.json({ status: "200_ok", msg: "api run success" });
-// });
+app.get("/", (req, res) => {
+  // console.log(req);
+  res.json({ status: "200_ok", msg: "api run success" });
+});
 app.post("/login", (req, res) => {
   const { email, password } = req.body;
   // console.log(email, password)
